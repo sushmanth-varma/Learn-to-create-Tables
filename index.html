@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TABLES</title>
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/1827/1827251.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,200;0,300;1,200;1,300&family=Archivo+Narrow:wght@700&family=Archivo+Black&family=IBM+Plex+Sans:wght@400;500;600;700&family=Lato:wght@400;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <span>Tables · Data Notebook</span>
+      <span class="wordmark">HEX</span>
+      <span>
+        <a href="#">Log in</a>
+        <a href="#" class="btn">Get started</a>
+      </span>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ═══════════════ HERO ═══════════════ -->
+    <section class="hero" id="top">
+      <span class="pill">Notebook · Tables</span>
+      <h1>A reference of <em>every table pattern</em></h1>
+      <h2>Colspan · Rowspan · Timetable · Data grids</h2>
+      <p>A quiet notebook of tables — from simple grids to compound colspan and rowspan layouts.</p>
+
+      <!-- Jump cards -->
+      <div class="jump-grid">
+        <a href="#table-1" class="jump-card">
+          <span class="jump-num">01</span>
+          <span class="jump-title">Basic</span>
+          <span class="jump-desc">Name · Lang · Year</span>
+        </a>
+        <a href="#table-2" class="jump-card">
+          <span class="jump-num">02</span>
+          <span class="jump-title">Colspan</span>
+          <span class="jump-desc">Merged header cells</span>
+        </a>
+        <a href="#table-3" class="jump-card">
+          <span class="jump-num">03</span>
+          <span class="jump-title">Rowspan</span>
+          <span class="jump-desc">Merged vertical cells</span>
+        </a>
+        <a href="#table-4" class="jump-card">
+          <span class="jump-num">04</span>
+          <span class="jump-title">Compound</span>
+          <span class="jump-desc">Spanning name column</span>
+        </a>
+        <a href="#table-5" class="jump-card">
+          <span class="jump-num">05</span>
+          <span class="jump-title">Timetable</span>
+          <span class="jump-desc">Weekly class schedule</span>
+        </a>
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- ═══════════════ TABLE 1 ═══════════════ -->
+    <section class="table-block" id="table-1">
+      <span class="pill">Table 01 · Basic</span>
+      <h3>Language creators</h3>
+      <p>A simple three-column grid — name, language, and year.</p>
+
+      <table border="1" cellpadding="15" cellspacing="0">
+        <tr>
+          <th>Name</th>
+          <th>Lang</th>
+          <th>Year</th>
+        </tr>
+        <tr>
+          <td>James</td>
+          <td>Java</td>
+          <td>1991</td>
+        </tr>
+        <tr>
+          <td>Guido</td>
+          <td>Python</td>
+          <td>1990</td>
+        </tr>
+        <tr>
+          <td>Dennis</td>
+          <td>c</td>
+          <td>1972</td>
+        </tr>
+      </table>
+    </section>
+
+    <hr />
+
+    <!-- ═══════════════ TABLE 2 ═══════════════ -->
+    <section class="table-block" id="table-2">
+      <span class="pill">Table 02 · Colspan</span>
+      <h3>ColSpan Table</h3>
+      <p>The colspan attribute defines the number of columns a table cell should span.</p>
+
+      <table border="1" cellpadding="15" cellspacing="0">
+        <tr>
+          <th>Name</th>
+          <th colspan="3">Skills</th>
+        </tr>
+        <tr>
+          <td>James</td>
+          <td>C</td>
+          <td>Java</td>
+          <td>HTML</td>
+        </tr>
+        <tr>
+          <td>Guide</td>
+          <td>C++</td>
+          <td>Pyhton</td>
+          <td>PHP</td>
+        </tr>
+      </table>
+    </section>
+
+    <hr />
+
+    <!-- ═══════════════ TABLE 3 ═══════════════ -->
+    <section class="table-block" id="table-3">
+      <span class="pill">Table 03 · Rowspan</span>
+      <h3>Table RowSpan</h3>
+      <p>The rowspan attribute specifies the number of rows a cell should span.</p>
+
+      <table border="1" cellspacing="0" cellpadding="15">
+        <tr>
+          <th>Name</th>
+          <th>Comapanies</th>
+        </tr>
+        <tr>
+          <td rowspan="3">James</td>
+          <td>Sun MicroSystems</td>
+        </tr>
+        <tr>
+          <td>Oracle</td>
+        </tr>
+        <tr>
+          <td>Liquid Robots</td>
+        </tr>
+        <tr>
+          <td rowspan="3">Guido</td>
+          <td>Google</td>
+        </tr>
+        <tr>
+          <td>Dropbox</td>
+        </tr>
+        <tr>
+          <td>MicroSoft</td>
+        </tr>
+      </table>
+    </section>
+
+    <hr />
+
+    <!-- ═══════════════ TABLE 4 ═══════════════ -->
+    <section class="table-block" id="table-4">
+      <span class="pill">Table 04 · Compound</span>
+      <h3>table 4</h3>
+      <p>A compound layout with a spanning name column across multiple rows.</p>
+
+      <table border="1" cellspacing="0" cellpadding="15">
+        <tr>
+          <th>Name</th>
+          <th>Comapanies</th>
+        </tr>
+        <tr>
+          <td rowspan="4">james</td>
+        </tr>
+        <tr>
+          <td>Sun MicroSystems</td>
+        </tr>
+        <tr>
+          <td>Oracle</td>
+        </tr>
+        <tr>
+          <td>Liquid Robots</td>
+        </tr>
+        <tr>
+          <td rowspan="4">Guido</td>
+        </tr>
+        <tr>
+          <td>Google</td>
+        </tr>
+        <tr>
+          <td>DropBox</td>
+        </tr>
+        <tr>
+          <td>MicroSoft</td>
+        </tr>
+      </table>
+    </section>
+
+    <hr />
+
+    <!-- ═══════════════ TABLE 5 ═══════════════ -->
+    <section class="table-block" id="table-5">
+      <span class="pill">Table 05 · Timetable</span>
+      <h3>Time table 5</h3>
+      <p>A full weekly timetable with lunch break and end-progress rowspans.</p>
+
+      <table border="1" cellspacing="0" cellpadding="15">
+        <thead>
+          <caption>
+          <tr>
+            <td style="text-align: center" colspan="6">
+              JAVA FULL STACK DEVELOPMENT- TapAcademy
+            </td>
+          </tr>
+          <!-- JAVA FULL STACK DEVELOPMENT- TapAcademy -->
+          </caption>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Day</th>
+            <th>9-10 AM</th>
+            <th>10-11 AM</th>
+            <th>11-12 AM</th>
+            <th>1-2 PM</th>
+            <th>2-4 PM</th>
+          </tr>
+          <tr>
+            <th>Monday</th>
+            <td>MySQL</td>
+            <td>Java</td>
+            <td>Soft Skills</td>
+            <td rowspan="5">Lunch Break</td>
+            <td>Mock</td>
+          </tr>
+          <tr>
+            <th>Tuesday</th>
+            <td colspan="2">Project Class</td>
+            <td>Programming</td>
+            <td>CSS</td>
+          </tr>
+          <tr>
+            <th>Wednesday</th>
+            <td>HTML</td>
+            <td>Python</td>
+            <td>SQL</td>
+            <td rowspan="2">End Progress</td>
+          </tr>
+          <tr>
+            <th>Thursday</th>
+            <td>Java</td>
+            <td colspan="2">React Js</td>
+          </tr>
+          <tr>
+            <th>Friday</th>
+            <td>Programming</td>
+            <td>Java</td>
+            <td>DSA</td>
+            <td>JavaScript</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td style="text-align: center" colspan="6">
+              NOTE: This is Tap Acedamy Time Table
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <hr />
+
+    <!-- Back to top -->
+    <section class="back-top-wrap">
+      <a href="#top" class="btn">↑ Back to top</a>
+    </section>
+
+  </main>
+
+  <footer>
+    <span>HEX · Tables notebook</span>
+    <span>© Parchment · Violet ink</span>
+  </footer>
+
+</body>
+
+</html>
